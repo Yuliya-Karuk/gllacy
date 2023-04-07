@@ -36,14 +36,16 @@
         </header>
 
         <main>
-
+            
             <section>
+                <h2 class="visually-hidden">Главные предложения</h2>
                 <img src="img/ice_group_1.png" alt="ice-cream_1">
                 <h1>Крем-брюле и пломбир с малиновым джемом</h1>
                 <a href="#"> Давайте оба!</a>
             </section>
 
             <section class="banners">
+                <h2 class="visually-hidden">Специальные предложения</h2>
                 <ul>
                     <li>
                         <h3>Малинка даром!</h3>
@@ -59,6 +61,7 @@
             </section>
 
             <section class="hits">
+                <h2 class="visually-hidden">Хиты продаж</h2>
                 <ul>
                     <li>
                         <img src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
@@ -88,7 +91,7 @@
             </section>
 
             <section class="about">
-                <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+                <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
                 <ul>
                     <li>
                         <img src="img/about_icon_1.svg" alt="about-icon-1" width="49px" height="49px">
@@ -110,18 +113,24 @@
                 </ul>
             </section>
 
-            <article class="news">
-                <p>Новое в нашем блоге</p>
-                <h2>10 способов сервировки фруктовых щербетов к столу</h2>
-            </article>
-
-            <article class="mailing">
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе вс</p>
-                <input class="" type="text" name="email" placeholder="email@example.com">
-                <button type="button">Отправить</button>
-            </article>
+            <section>
+                <h2 class="visually-hidden">Новости</h2>
+                <article class="news">
+                    <p>Новое в нашем блоге</p>
+                    <h2><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
+                </article>
+                
+                <article class="mailing">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе вс</p>
+                    <label class="visually-hidden" for="user-email"></label>
+                    <input id="user-email" type="email" name="email" placeholder="email@example.com" required>
+                    <button type="submit">Отправить</button>
+                </article>
+            </section>
+            
 
             <section class="maps">
+                <h2 class="visually-hidden">Контакты</h2>
                 <div>
 
                 </div>
@@ -130,7 +139,7 @@
                     <h4>ул. Большая Конюшенная 19/8, Санкт-Петербург</h4>
                     <p>Для заказов по телефону:</p>
                     <h4>8 812 450-25-25 (с 10 до 20 ежедневно)</h4>
-                    <button type="button">Форма обратной связи</button>
+                    <a href="">Форма обратной связи</a>
                 </div>
             </section>
 
@@ -140,22 +149,22 @@
             <section>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="магазин Глейси в Твиттер">
                             <img src="img/twitter.svg" alt="twitter_link">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="магазин Глейси в Инстаграм">
                             <img src="img/instagram.svg" alt="instagram_link">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="магазин Глейси в Фейсбук">
                             <img src="img/facebook.svg" alt="facebook_link">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="магазин Глейси в Вконтакте">
                             <img src="img/vk.svg" alt="vkontakte_link">
                         </a>
                     </li>
@@ -181,6 +190,57 @@
             </section>
         </footer>
 
+        <section>
+            <h2 class="visually-hidden">Поиск на сайте</h2>
+            <form action="#" method="post">
+                <label for="header_search" class="visually-hidden">Крем брюле</label>
+                <input id="header_search" type="text" name="search" placeholder="Крем брюле">
+            </form>
+        </section>
+        
+        <section>
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="header_login" class="visually-hidden">Логин пользователя</label>
+                        <input id="header_login" type="email" name="login-login" placeholder="email@example@com">
+                    </li>
+                    <li>
+                        <label for="header_password" class="visually-hidden">Логин пользователя</label>
+                        <input id="header_password" type="password" name="login-password" placeholder="*******">
+                    </li>
+                </ul>
+                <button type="submit">Войти</button>
+                <a href="№">Забыли пароль?</a>
+                <a href="№">Забыли пароль?</a>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <p>Мы обязательно вам ответим!</p>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="feedback-name" class="visually-hidden">Имя Фамилия</label>
+                        <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+                    </li>
+                    <li>
+                        <label for="feedback-email" class="visually-hidden">Email</label>
+                        <input id="feedback-email" type="email" name="email" placeholder="email@example@com">
+                    </li>
+                    <li>
+                        <label for="feedback-text" class="visually-hidden">В свободной форме</label>
+                        <input id="feedback-text" type="text" name="message" placeholder="В свободной форме">
+                    </li>
+                </ul>
+                <button type="submit">Отправить</button>
+            </form>
+            <button type="button" aria-label="Закрыть форму обратной связи">
+                <img src="img/close_btn.svg" alt="close">
+            </button>
+        </section>
 
     </div>
 </body>
