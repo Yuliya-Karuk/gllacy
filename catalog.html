@@ -2,239 +2,295 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Home</title>
 </head>
-<body>
-    <div class="container">
-    
-        <header>
-            <nav>
-                <a>
-                    <img scr="img/header_logo.svg" alt="gllacy_logo">
+<body class="page-body main-page">
+    <header class="main-header container">
+        <nav class="main-navigation">
+            <div class="navigation-links">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/header_logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
                 </a>
-                <ul>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="blank.html">Доставка и оплата</a></li>
-                    <li><a href="blank.html">О компании</a></li>
+                <ul class="menu-list">
+                    <li class="menu-link active"><a href="catalog.html"><span>Каталог</span></a></li>
+                    <li class="menu-link"><a href="blank.html"><span>Доставка и оплата</span></a></li>
+                    <li class="menu-link"><a href="blank.html"><span>О компании</span></a></li>
                 </ul>
-                <a href="#">
-                    <img src="img/header_search.svg" alt="gllacy_search">
-                </a>
-                <a href="#">
-                    <img src="img/header_enter.svg" alt="gllacy_enter">
-                    <p>Вход</p>
-                </a>
-                <a href="#">
-                    <img src="img/header_cart.svg" alt="gllacy_shopping_cart">
-                    <p>Пусто</p>
-                </a>
-                <div>
-                    <p>С 10 до 20, ежедневно</p>
-                    <p>8 812 450-25-25</p>
+            </div>
+            <div class="user-navigation">
+                <div class="user-navigation-item">
+                    <a href="#">
+                        <span class="visually-hidden">Поиск</span>
+                        <img src="img/header_search.svg" width="20" height="19" alt="gllacy_search">
+                    </a>
                 </div>
-            </nav>
-        </header>
+                <div class="user-navigation-item">
+                    <a href="#">
+                        <span class="visually-hidden">Вход</span>
+                        <img src="img/header_enter.svg" width="20" height="19" alt="gllacy_enter">
+                        <p>Вход</p>
+                    </a>
+                </div>
+                <div class="user-navigation-item">
+                    <a href="#">
+                        <span class="visually-hidden">Корзина</span>
+                        <img src="img/header_cart.svg" width="20" height="19" alt="gllacy_shopping_cart">
+                        <p>Пусто</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <p class="header-worktime">С 10 до 20, ежедневно</p>
+        <p class="header-phone">8 812 450-25-25</p>
+    
+    </header> <!-- close header -->
 
-        <main>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li>Сливочное</li>
-            </ul>
-
-            <h1>Сливочное мороженое</h1>
-
-            <section class="filters">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset>
-                        <legend>Сортировка:</legend>
-                        <select>
-                            <option value="1">по популятности</option>
-                            <option value="2">сначала недорогие</option>
-                            <option value="3">сначала дорогие</option>
-                            <option value="4">по жирности</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Цена:</legend>
-
-                    </fieldset>
-                    <fieldset>
-                        <legend>Жирность:</legend>
-                        <ul>
-                            <li>
-                                <input type="radio" id="filter-0%" name="fat-content" value="0%" checked>
-                                <label for="filter-0%">0%</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="filter-before10%" name="fat-content" value="0-10%">
-                                <label for="filter-before10%">до 10%</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="filter-before30%" name="fat-content" value="10%-30%">
-                                <label for="filter-before30%">до 30%</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="filter-above30%" name="fat-content" value=">30%">
-                                <label for="filter-above30%">выше 30%</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Наполнители:</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="filter-chocolate" name="chocolate" checked>
-                                <label for="filter-chocolate">Шоколадные</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="filter-sugar-powder" name="sugar-powder">
-                                <label for="filter-sugar-powder">Сахарные присыпки</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="filter-sugar-powder" name="sugar-powder">
-                                <label for="filter-sugar-powder">Сахарные присыпки</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="filter-fruit" name="sugar-fruit">
-                                <label for="filter-fruit">Фрукты</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="filter-syrup" name="sugar-syrup">
-                                <label for="filter-syrup">Сиропы</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="filter-jam" name="jam">
-                                <label for="filter-jam">Джемы</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button type="submit">Применить</button>
-                </form>
-            </section>
-
-            <section>
-                <h2 class="visually-hidden">Каталог мороженного</h2>
-                <ul>
-                    <li>
-                        <img src="img/ice_hit_1.png" alt="hit-image-1">
-                        <p>310 ₽/кг</p>
+    <main class="catalog container">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li class="breadcrumbs-current">Сливочное</li>
+        </ul>
+    
+        <h1>Сливочное мороженое</h1>
+    
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <select>
+                        <option value="1">по популятности</option>
+                        <option value="2">сначала недорогие</option>
+                        <option value="3">сначала дорогие</option>
+                        <option value="4">по жирности</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Цена:</legend>
+    
+                </fieldset>
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="filter-0%" name="fat-content" value="0%" checked>
+                            <label for="filter-0%">0%</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="filter-before10%" name="fat-content" value="0-10%">
+                            <label for="filter-before10%">до 10%</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="filter-before30%" name="fat-content" value="10%-30%">
+                            <label for="filter-before30%">до 30%</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="filter-above30%" name="fat-content" value=">30%">
+                            <label for="filter-above30%">выше 30%</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="filter-chocolate" name="chocolate" checked>
+                            <label for="filter-chocolate">Шоколадные</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter-sugar-powder" name="sugar-powder">
+                            <label for="filter-sugar-powder">Сахарные присыпки</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter-sugar-powder" name="sugar-powder">
+                            <label for="filter-sugar-powder">Сахарные присыпки</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter-fruit" name="sugar-fruit">
+                            <label for="filter-fruit">Фрукты</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter-syrup" name="sugar-syrup">
+                            <label for="filter-syrup">Сиропы</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter-jam" name="jam">
+                            <label for="filter-jam">Джемы</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Применить</button>
+            </form>
+        </section>
+    
+        <section class="hits">
+            <h2 class="visually-hidden">Каталог мороженного</h2>
+            <ul class="hit-list">
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_1.png" width="267px" height="267px" alt="hit-image-1">
                         <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_2.png" alt="hit-image-2">
-                        <p>310 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">310 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_2.png" width="267px" height="267px" alt="hit-image-2">
                         <p>Сливочно-кофейное с кусочками шоколада</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_3.png" alt="hit-image-3">
-                        <p>310 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">380 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_3.png" width="267px" height="267px" alt="hit-image-3">
                         <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_4.png" alt="hit-image-4">
-                        <p>310 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">355 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_4.png" width="267px" height="267px" alt="hit-image-4">
                         <p>Сливочное крем-брюле с карамельной подливкой</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_5.png" alt="hit-image-5">
-                        <p>325 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">450 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_5.png" width="267px" height="267px" alt="hit-image-5">
                         <p>Сливочное с брусничным джемом</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_6.png" alt="hit-image-6">
-                        <p>410 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">325 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_6.png" width="267px" height="267px" alt="hit-image-6">
                         <p>Сливочно-черничное с цельными ягодами черники</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_7.png" alt="hit-image-7">
-                        <p>375 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">410 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_7.png" width="267px" height="267px" alt="hit-image-7">
                         <p>Сливочно-лимонное с карамельной присыпкой</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_8.png" alt="hit-image-8">
-                        <p>320 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">375 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_8.png" width="267px" height="267px" alt="hit-image-8">
                         <p>Сливочное с шоколадной стружкой</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_9.png" alt="hit-image-9">
-                        <p>440 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">320 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_9.png" width="267px" height="267px" alt="hit-image-9">
                         <p>Сливочно-ванильное с кусочками шоколада</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_10.png" alt="hit-image-10">
-                        <p>435 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">440 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_10.png" width="267px" height="267px" alt="hit-image-10">
                         <p>Сливочноe с ментоловым сиропом</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_11.png" alt="hit-image-11">
-                        <p>355 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">435 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_11.png" width="267px" height="267px" alt="hit-image-11">
                         <p>Сливочное с кусочками черного шоколада</p>
-                    </li>
-                    <li>
-                        <img src="img/ice_hit_12.png" alt="hit-image-12">
-                        <p>420 ₽/кг</p>
+                    </a>
+                    <p class="hit-price">355 ₽<span>/кг</span></p>
+                </li>
+                <li class="hit-item">
+                    <img class="img-hit" src="img/hit.svg" width="61px" height="61px" alt="hit-logo">
+                    <a class="hit-wrap" href="#">
+                        <img src="img/ice_hit_12.png" width="267px" height="267px" alt="hit-image-12">
                         <p>Сливочное с мятным сиропом</p>
-                    </li>
-                </ul>
-            </section>
+                    </a>
+                    <p class="hit-price">420 ₽<span>/кг</span></p>
+                </li>
+            </ul>
+        </section> <!-- close section catalog -->
+    
+        <section class="pagination">
+            <a class="pagination-arrow pagination-prev" href="#" aria-label="назад"></a>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">4</a></li>
+                <li class="pagination-item"><a href="#">5</a></li>
+            </ul>
+            <a class="pagination-arrow pagination-prev" href="#" aria-label="назад"></a>
+        </section>
+    
+    </main>
 
-            <section>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-            </section>
-
-        </main>
-
-        <footer>
-            <section>
-                <ul>
-                    <li>
-                        <a href="#" aria-label="магазин Глейси в Твиттер">
-                            <img src="img/twitter.svg" alt="twitter_link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="магазин Глейси в Инстаграм">
-                            <img src="img/instagram.svg" alt="instagram_link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="магазин Глейси в Фейсбук">
-                            <img src="img/facebook.svg" alt="facebook_link">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="магазин Глейси в Вконтакте">
-                            <img src="img/vk.svg" alt="vkontakte_link">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Для поставщиков:</h2>
-                <ul>
-                    <li>
-                        <a href="#">О производстве</a>
-                    </li>
-                    <li>
-                        <a href="#">Наши документы</a>
-                    </li>
-                    <li>
-                        <a href="#">Экологические стандарты</a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Разработано</h2>
-                <a href="blank.html">Компания</a>
-            </section>
-        </footer>
-
-    </div>
+    <footer class="main-footer container">
+        <section class="social">
+            <ul class="social-list">
+                <li>
+                    <a href="#" width="32" height="32" aria-label="магазин Глейси в Твиттер">
+                        <img src="img/twitter.svg" alt="twitter_link">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" width="32" height="32" aria-label="магазин Глейси в Инстаграм">
+                        <img src="img/instagram.svg" alt="instagram_link">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" width="32" height="32" aria-label="магазин Глейси в Фейсбук">
+                        <img src="img/facebook.svg" alt="facebook_link">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" width="32" height="32" aria-label="магазин Глейси в Вконтакте">
+                        <img src="img/vk.svg" alt="vkontakte_link">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-menu">
+            <img src="img/heart.svg" width="15" height="13" alt="картинка сердце">
+            <ul class="footer-menu-list">
+                <li>
+                    <a href="#">Для поставщиков</a>
+                </li>
+                <li>
+                    <a href="#">Наши документы</a>
+                </li>
+                <li>
+                    <a href="#">О производстве</a>
+                </li>
+                <li>
+                    <a href="#">Экологические стандарты</a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-copyright">
+            <a class="copyright-btn" href="https://htmlacademy.ru" aria-label="сайт разработчиков">
+                <img src="img/academy-logo.svg" width="108" height="39" alt="Логотип разработчика">
+            </a>
+            <span>Сделано в HTML Academy &copy; 2023</span>
+        </section>
+    </footer>
+   
 </body>
 </html>
