@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Home</title>
 </head>
-<body class="page-body main-page">
+<body class="page-body site-wrapper-2">
     
     <header class="main-header container">
         <nav class="main-navigation">
@@ -51,16 +51,35 @@
     <main>
 
         <section class="slider">
+            <h2 class="visually-hidden">Главные предложения</h2>
             <div class="lightening">
             </div>
-            <h2 class="visually-hidden">Главные предложения</h2>
-            <img src="img/ice_group_1.png" width="647" height="584" alt="Специальное предложение крем-брюле и пломбир с малиновым джемом">
-            <h1 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h1>
-            <a class="red-button special-button" href="#">Давайте оба!</a>
+            <ul class="slider-list">
+                <li class="slider-item slide">
+                    <img src="img/ice_group_1.png" width="647" height="584"
+                        alt="Специальное предложение крем-брюле и пломбир с малиновым джемом">
+                    <h1 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h1>
+                    <a class="red-button special-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide">
+                    <img src="img/ice_group_2.png" width="647" height="584"
+                        alt="Специальное предложение крем-брюле и пломбир с малиновым джемом">
+                    <h1 class="slider-title">Шоколадный пломбир и лимонный сорбет</h1>
+                    <a class="red-button special-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide slide-current">
+                    <img src="img/ice_group_3.png" width="647" height="584"
+                        alt="Специальное предложение крем-брюле и пломбир с малиновым джемом">
+                    <h1 class="slider-title">Пломбир с помадкой и клубничный щербет</h1>
+                    <a class="red-button special-button" href="#">Давайте оба!</a>
+                </li>
+            </ul>
+            
+            
             <div class="slider-controls container">
-                <button class="btn-slide btn-slide-active" aria-label="Первое специальное предложение"></button>
-                <button class="btn-slide" aria-label="Второе специальное предложение"></button>
-                <button class="btn-slide" aria-label="Третье специальное предложение"></button>
+                <button class="btn-slide btn-slide-active" type="button" aria-label="Первое специальное предложение"></button>
+                <button class="btn-slide" type="button" aria-label="Второе специальное предложение"></button>
+                <button class="btn-slide" type="button" aria-label="Третье специальное предложение"></button>
             </div>
         </section> <!-- close section slider -->
 
@@ -85,7 +104,7 @@
                 </li>
             </ul>
         </section> <!-- close section banners -->
-        
+
         <section class="hits container">
             <h2 class="visually-hidden">Хиты продаж</h2>
             <ul class="hit-list">
@@ -188,9 +207,9 @@
                 </div>
             </div>
         </section> <!-- close section map -->
-    
+        
     </main>
-
+        
     <footer class="main-footer container">
         <section class="social">
             <ul class="social-list">
@@ -240,59 +259,62 @@
             <span>Сделано в HTML Academy &copy; 2023</span>
         </section>
     </footer>
-
+    
     <!-- <section>
-        <h2 class="visually-hidden">Поиск на сайте</h2>
-        <form action="#" method="post">
-            <label for="header_search" class="visually-hidden">Крем брюле</label>
-            <input id="header_search" type="text" name="search" placeholder="Крем брюле">
-        </form>
-    </section>
-    
-    <section>
-        <h2 class="visually-hidden">Вход в личный кабинет</h2>
-        <form action="#" method="post">
-            <ul>
-                <li>
-                    <label for="header_login" class="visually-hidden">Логин пользователя</label>
-                    <input id="header_login" type="email" name="login-login" placeholder="email@example@com">
-                </li>
-                <li>
-                    <label for="header_password" class="visually-hidden">Логин пользователя</label>
-                    <input id="header_password" type="password" name="login-password" placeholder="*******">
-                </li>
-            </ul>
-            <button type="submit">Войти</button>
-            <a href="№">Забыли пароль?</a>
-            <a href="№">Забыли пароль?</a>
-        </form>
-    </section>
-    
-    <section>
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <p>Мы обязательно вам ответим!</p>
-        <form action="" method="post">
-            <ul>
-                <li>
-                    <label for="feedback-name" class="visually-hidden">Имя Фамилия</label>
-                    <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-                </li>
-                <li>
-                    <label for="feedback-email" class="visually-hidden">Email</label>
-                    <input id="feedback-email" type="email" name="email" placeholder="email@example@com">
-                </li>
-                <li>
-                    <label for="feedback-text" class="visually-hidden">В свободной форме</label>
-                    <input id="feedback-text" type="text" name="message" placeholder="В свободной форме">
-                </li>
-            </ul>
-            <button type="submit">Отправить</button>
-        </form>
-        <button type="button" aria-label="Закрыть форму обратной связи">
-            <img src="img/close_btn.svg" alt="close">
-        </button>
-    </section> -->
-
+                    <h2 class="visually-hidden">Поиск на сайте</h2>
+                    <form action="#" method="post">
+                        <label for="header_search" class="visually-hidden">Крем брюле</label>
+                        <input id="header_search" type="text" name="search" placeholder="Крем брюле">
+                    </form>
+                </section>
+                
+                <section>
+                    <h2 class="visually-hidden">Вход в личный кабинет</h2>
+                    <form action="#" method="post">
+                        <ul>
+                            <li>
+                                <label for="header_login" class="visually-hidden">Логин пользователя</label>
+                                <input id="header_login" type="email" name="login-login" placeholder="email@example@com">
+                            </li>
+                            <li>
+                                <label for="header_password" class="visually-hidden">Логин пользователя</label>
+                                <input id="header_password" type="password" name="login-password" placeholder="*******">
+                            </li>
+                        </ul>
+                        <button type="submit">Войти</button>
+                        <a href="№">Забыли пароль?</a>
+                        <a href="№">Забыли пароль?</a>
+                    </form>
+                </section>
+                
+                <section>
+                    <h2 class="visually-hidden">Форма обратной связи</h2>
+                    <p>Мы обязательно вам ответим!</p>
+                    <form action="" method="post">
+                        <ul>
+                            <li>
+                                <label for="feedback-name" class="visually-hidden">Имя Фамилия</label>
+                                <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+                            </li>
+                            <li>
+                                <label for="feedback-email" class="visually-hidden">Email</label>
+                                <input id="feedback-email" type="email" name="email" placeholder="email@example@com">
+                            </li>
+                            <li>
+                                <label for="feedback-text" class="visually-hidden">В свободной форме</label>
+                                <input id="feedback-text" type="text" name="message" placeholder="В свободной форме">
+                            </li>
+                        </ul>
+                        <button type="submit">Отправить</button>
+                    </form>
+                    <button type="button" aria-label="Закрыть форму обратной связи">
+                        <img src="img/close_btn.svg" alt="close">
+                    </button>
+                </section> -->
+        
         
 </body>
+        
 </html>
+
+        

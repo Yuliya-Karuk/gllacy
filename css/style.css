@@ -63,6 +63,7 @@ img {
 }
 
 .menu-list,
+.slider-list,
 .banners-list,
 .hit-list,
 .about-list,
@@ -120,10 +121,17 @@ img {
 /* MAIN PAGE */
 
 /* HEADER */
-.main-page {
+.site-wrapper-1 {
     background-color: var(--index-bg1);
 }
 
+.site-wrapper-2 {
+    background-color: #8996A6;
+}
+
+.site-wrapper-3 {
+    background-color: #9D8B84;
+} 
 
 .main-header {
     margin-top: 9px;
@@ -264,21 +272,56 @@ img {
 
 .lightening {
     position: absolute;
-    top: -112px;
+    top: -120px;
     width: 716px;
     height: 716px;
     margin: 0 auto;
+}
 
+.site-wrapper-2 .lightening {
     background: rgba(215, 242, 227, 0.75);
     filter: blur(125px);
 }
+
+.site-wrapper-2 .lightening {
+    background: rgba(218, 228, 239, 0.75);
+    filter: blur(125px);
+}
+
+.site-wrapper-3 .lightening {
+    background: rgba(239, 224, 218, 0.75);
+    filter: blur(125px);
+}
+
+.slider-list {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.slider-item {
+    padding-top: 285px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-current {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 672px;
+}
+
 
 .slider img {
     width: 647px;
     height: 584px;
 
     position: absolute;
-    top: -30px;
+    top: -35px;
 
     opacity: 1;
 }
@@ -287,19 +330,19 @@ img {
     font-weight: 700;
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
 
     margin: 0 auto;
     margin-bottom: 27px;
-    width: 672px;
+    width: 700px;
 
-    position: absolute;
-    top: 285px;
+    z-index: 1;
 }
 
 .special-button {
-    position: absolute;
-    top: 430px;
+
     padding: 9px 23px;
+    margin-bottom: 40px;
 
     font-size: 32px;
     line-height: 44px;
@@ -309,22 +352,25 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    z-index: 1;
 }
 
 .slider-controls {
     position: absolute;
-    top: 563px;
+    bottom: 60px;
 }
 
 .btn-slide {
-    width: 21px;
-    height: 21px;
+    padding: 0;
+    width: 17px;
+    height: 17px;
     margin-right: 8px;
 
     border: 2px solid var(--basic-white);
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--index-bg1);
+    background-color: transparent;
 }
 
 .btn-slide-active {
@@ -336,7 +382,7 @@ img {
 .banners {
     position: relative;
     z-index: 1;
-    margin-top: 535px;
+    margin-top: 0px;
 }
 
 .banners-list {
