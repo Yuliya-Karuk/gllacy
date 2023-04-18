@@ -1,5 +1,8 @@
 /* outline: 5px solid rgba(0, 0, 255, 0.7);
-outline-offset: -5px;*/
+outline-offset: -5px;
+
+text-align: center;
+vertical-align: middle;*/
 
 :root {
     --index-bg1: #849D8F;
@@ -838,9 +841,87 @@ img {
 
 /* FILTERS */
 .filters {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 218px;
+}
+
+.price-controls {
+    margin-bottom: 7px;
+}
+
+
+.price-controls input {
+    font-size: inherit;
+
+    width: 30px;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    color: inherit;
+    text-align: right;
 
 }
 
+.range-controls {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: 36px;
+    padding-top: 18px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    position: relative;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(248, 247, 244, 0.5);
+    
+}
+
+.range-controls .bar {
+    height: 2px;
+    
+    background: #F8F7F4;
+
+    position: absolute;
+
+}
+
+.range-controls .toggle {
+    box-sizing: content-box;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: #ABABAB;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8px;
+}
+
+
+
+
+
+
+
+/* PAGINATION */
 
 .pagination {
     padding-bottom: 30px;

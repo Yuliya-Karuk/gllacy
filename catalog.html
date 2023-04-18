@@ -68,10 +68,29 @@
                         <option value="4">по жирности</option>
                     </select>
                 </fieldset>
-                <fieldset>
-                    <legend>Цена:</legend>
-    
+
+                <fieldset class="filter-item">
+                    <legend class="visually-hidden">Цена:</legend>
+                    <div class="price-controls">
+                        <label class="min-price">
+                            Цена: <input type="text" name="min-price" value="100"> ₽
+                        </label>
+                        <label class="max-price">
+                            – <input type="text" name="min-price" value="500"> ₽
+                        </label>
+                    </div>
+
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar" style="width: 50%; left: 15%"></div>
+                            </div>
+                            <div class="toggle toggle-min" tabindex="0" style="left: 15%"></div>
+                            <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
+                        </div>
+                    </div>
                 </fieldset>
+
                 <fieldset>
                     <legend>Жирность:</legend>
                     <ul>
