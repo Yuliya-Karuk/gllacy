@@ -82,6 +82,7 @@ img {
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
+    cursor: pointer;
 }
 
 .red-button:hover {
@@ -101,6 +102,7 @@ img {
     box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
     border-radius: 26px;
     border: none;
+    cursor: pointer;
 }
 
 .middle-button:hover {
@@ -166,7 +168,6 @@ img {
 .main-header {
     margin-top: 9px;
     position: relative;
-    z-index: 1;
 }
 
 .main-navigation {
@@ -406,7 +407,9 @@ img {
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
-    text-align: end;
+
+    display: flex;
+    justify-content: flex-end;
     margin-top: 8px;
 }
 
@@ -422,6 +425,7 @@ img {
 
 .lightening {
     position: absolute;
+    z-index: -1;
     top: -120px;
     width: 716px;
     height: 716px;
@@ -1062,6 +1066,7 @@ img {
 
     position: absolute;
     top: -20px;
+    z-index: 0;
 }
 
 .breadcrumbs a {
