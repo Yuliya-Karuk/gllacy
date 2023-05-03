@@ -72,7 +72,7 @@
                                 </li>
                             </ul>
                             <div class="login-info">
-                                <button type="submit">Войти</button>
+                                <button class="middle-button" type="submit">Войти</button>
                                 <div class="restore">
                                     <a href="#">Забыли пароль?</a>
                                     <a href="#">Новая регистрация</a>
@@ -263,6 +263,7 @@
         
         <section class="map container">
             <h2 class="visually-hidden">Контакты</h2>
+            <div id="map"></div>
             <div class="map-wrapper">
                 <img src="img/map.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 <span class="map-pin"></span>
@@ -361,7 +362,6 @@
         </section>
     </footer>
 
-
     <section class="modal modal-feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="modal-feedback-description">Мы обязательно вам ответим!</p>
@@ -381,11 +381,15 @@
                     <textarea class="feedback-message" id="feedback-message" name="message" placeholder="В свободной форме" rows="7"></textarea>
                 </li>
             </ul>
-            <button class="middle-button modal-feedback-button" type="button">Отправить</button>
+            <button class="middle-button modal-feedback-button" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-        
+
+    <div class="overlay"></div>
+
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl9WhdFmaga8TfvF2ssgpR0DqGZaqxNjI&callback=initMap"></script>
 </body> 
 </html>
 
