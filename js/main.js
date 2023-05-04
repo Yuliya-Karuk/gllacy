@@ -1,3 +1,4 @@
+// Modal Map
 function initMap() {
     var coordinates = {lat: 59.938770, lng: 30.323053},
     
@@ -14,6 +15,8 @@ function initMap() {
         });
 }
 
+
+// Modal Feedback
 var linkFeedback =  document.querySelector(".feedback-button");
 var modalFeedback = document.querySelector(".modal-feedback");
 var closeModalFeedback = modalFeedback.querySelector(".modal-close");
@@ -130,27 +133,3 @@ sliderLinkThirst.addEventListener("click", function(evt) {
     sliderLinkFirst.classList.remove("btn-slide-active");
     sliderLinkThirst.classList.add("btn-slide-active");
 })
-
-/*var listSliders = document.querySelectorAll(".slider-list li");
-var listLinks = document.querySelectorAll(".slider-controls button");
-
-function changeSlider(n) {
-    listSliders[n].classList.add("slide-current");
-    listLinks[n].classList.add("btn-slide-active");
-    body.classList.add("site-wrapper-[n]");
-
-
-    modalFeedback.classList.add("modal-show");
-    overlay.classList.add("overlay-show");
-    // body.style.overflow = 'hidden';
-    feedbackName.focus();
-}
-
-listLinks.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modalFeedback.classList.add("modal-show");
-    overlay.classList.add("overlay-show");
-    // body.style.overflow = 'hidden';
-    feedbackName.focus();
-}
-*/
