@@ -735,8 +735,14 @@ img {
     text-decoration: underline;
 }
 
+.hit-wrap img {
+    -o-object-fit: contain;
+    
+    object-fit: contain;
+}
 
 /* ABOUT */
+
 .about {
     border-radius: 16px;
     background-image: url(../img/pattern.png);
