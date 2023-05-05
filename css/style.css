@@ -1915,7 +1915,7 @@ fieldset select:focus {
 
 .feedback-list {
     list-style: none;
-    margin-top: 23px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 0;
 }
@@ -1940,17 +1940,17 @@ fieldset select:focus {
 
 .feedback-list input {
     width: 267px;
-    padding: 16px 14px 10px 14px;
+    padding: 5px 14px 10px 14px;
     margin-bottom: 20px;
 }
 
 .feedback-list textarea {
     width: 100%;
-    padding: 10px 14px 20px;
+    padding: 10px 14px 5px;
 }
 
 .modal-feedback-button {
-    padding: 10px 21px;
+    padding: 10px 25px;
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
@@ -1962,8 +1962,8 @@ fieldset select:focus {
 
 .modal-close {
     position: absolute;
-    top: 15px;
-    right: 17px;
+    top: 10px;
+    right: 18px;
     width: 18px;
     height: 18px;
 
